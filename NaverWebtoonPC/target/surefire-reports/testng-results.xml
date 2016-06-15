@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Parallel Tests" duration-ms="12962" started-at="2016-06-15T02:59:53Z" finished-at="2016-06-15T03:00:06Z">
+  <suite name="Parallel Tests" duration-ms="12498" started-at="2016-06-15T03:23:23Z" finished-at="2016-06-15T03:23:35Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="12962" started-at="2016-06-15T02:59:53Z" finished-at="2016-06-15T03:00:06Z">
+    <test name="test" duration-ms="12498" started-at="2016-06-15T03:23:23Z" finished-at="2016-06-15T03:23:35Z">
       <class name="main.TC01_공통">
-        <test-method status="PASS" signature="test(java.lang.String)[pri:0, instance:main.TC01_공통@edf4efb]" name="test" is-config="true" duration-ms="4279" started-at="2016-06-15T11:59:53Z" finished-at="2016-06-15T11:59:58Z">
+        <test-method status="PASS" signature="test(java.lang.String)[pri:0, instance:main.TC01_공통@1554909b]" name="test" is-config="true" duration-ms="4277" started-at="2016-06-15T12:23:23Z" finished-at="2016-06-15T12:23:27Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="comic_001()[pri:0, instance:main.TC01_공통@edf4efb]" name="comic_001" duration-ms="3994" started-at="2016-06-15T11:59:58Z" finished-at="2016-06-15T12:00:02Z">
+        <test-method status="PASS" signature="comic_001()[pri:0, instance:main.TC01_공통@1554909b]" name="comic_001" duration-ms="3989" started-at="2016-06-15T12:23:27Z" finished-at="2016-06-15T12:23:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- comic_001 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:main.TC01_공통@edf4efb]" name="afterClass" is-config="true" duration-ms="4682" started-at="2016-06-15T12:00:02Z" finished-at="2016-06-15T12:00:06Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:main.TC01_공통@1554909b]" name="afterClass" is-config="true" duration-ms="4225" started-at="2016-06-15T12:23:31Z" finished-at="2016-06-15T12:23:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
