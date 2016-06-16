@@ -36,6 +36,8 @@ public class Utilities extends declaration{
 		for (String childWindow: driver.getWindowHandles()){
 			driver.switchTo().window(childWindow);
 		}
+		
+		Thread.sleep(2000);
 		driver.close();
 		driver.switchTo().window(parentWindow);
 	}
