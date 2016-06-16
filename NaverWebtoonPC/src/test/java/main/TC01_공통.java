@@ -1,16 +1,18 @@
 package main;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import resources.*;
+import resources.Utilities;
+import resources.beforeTest;
+import resources.declaration;
 
 
 public class TC01_공통 extends declaration{
-	
-	
+		
 	@Parameters("browser")		
 	@BeforeTest
 	public void test(String browser) throws Exception{
@@ -29,8 +31,18 @@ public class TC01_공통 extends declaration{
 	//COMIC_001~COMIC_008
 	@Test
 	public void comic_001() throws Exception{
-		
-			Utilities.checkCurrentUrl();
+
+		Utilities.checkCurrentUrl(naverBI);			
+		Utilities.checkCurrentUrl(novel);
+			
+		Utilities.gnbSearch();			
+			//Utilities.choiceSearch();
+			
+		driver.findElement(By.xpath(comic)).click();					
+		Utilities.login("nv_cjdthsus1235", "nhn123!@#");
+		Utilities.menu();
+			
+
 			
 	}
 

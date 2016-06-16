@@ -7,7 +7,9 @@
     <classes>
       <class name="main.TC01_공통">
         <methods>
-          <include name="gnb"/>
+          <include name="test"/>
+          <include name="afterClass"/>
+          <include name="comic_001"/>
         </methods>
       </class> <!-- main.TC01_공통 -->
     </classes>
