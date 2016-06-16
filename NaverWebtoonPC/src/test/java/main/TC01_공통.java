@@ -1,6 +1,7 @@
 package main;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -32,18 +33,22 @@ public class TC01_공통 extends declaration{
 	@Test
 	public void comic_001() throws Exception{
 
+		//WebElement comicBtn = driver.findElement(By.xpath(comic));
+		
 		Utilities.checkCurrentUrl(naverBI);			
 		Utilities.checkCurrentUrl(novel);
 			
 		Utilities.gnbSearch();			
-			//Utilities.choiceSearch();
+		//Utilities.choiceSearch();
 			
+		Thread.sleep(2000);
 		driver.findElement(By.xpath(comic)).click();					
 		Utilities.login("nv_cjdthsus1235", "nhn123!@#");
 		Utilities.menu();
 			
-
-			
+		Utilities.footer();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(comic)).click();
 	}
 
 	

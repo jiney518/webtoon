@@ -4,12 +4,12 @@ import java.util.List;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utilities extends declaration{
+	
 	
 	//GNB 링크 클릭 후 홈으로 이동 
 	public static void checkCurrentUrl(String gnbBI) throws Exception{
@@ -29,6 +29,7 @@ public class Utilities extends declaration{
 		driver.navigate().back();
 	}
 	
+	
 	//window handle
 	public static void windowHandle() throws Exception{
 		
@@ -36,11 +37,11 @@ public class Utilities extends declaration{
 		for (String childWindow: driver.getWindowHandles()){
 			driver.switchTo().window(childWindow);
 		}
-		
-		Thread.sleep(2000);
-		driver.close();
+		driver.close();		
 		driver.switchTo().window(parentWindow);
+		Thread.sleep(2000);
 	}
+	
 	
 	//GNB_search 
 	public static void gnbSearch() throws Exception{
@@ -50,6 +51,7 @@ public class Utilities extends declaration{
 		driver.findElement(By.xpath(searchBtn)).click();
 		
 	}
+	
 	
 	//검색결과_옵션 선택
 	public static void choiceSearch() throws Exception{
@@ -90,6 +92,7 @@ public class Utilities extends declaration{
 		Assert.assertEquals("내정보 보기", driver.findElement(By.xpath("//*[@id='gnb_my_namebox']/a[1]/em")).getText());
 	}
 	
+	
 	//비로그인_마이페이지 클릭 
 	public static void myPageLogin(String testId, String testPw) throws Exception{
 		WebElement id = driver.findElement(By.xpath(declaration.id));
@@ -101,6 +104,7 @@ public class Utilities extends declaration{
 		
 		System.out.println("마이페이지 클릭하여 로그인 완료");
 	}
+	
 	
 	//상단 메뉴로 이동
 	public static void menu() throws Exception{
@@ -126,9 +130,33 @@ public class Utilities extends declaration{
 		windowHandle();
 		System.out.println("n스토어 > 단행본 만화 클릭 확인");
 		
+		Thread.sleep(1000);
 		driver.findElement(By.xpath(meun_nstore_novel)).click();
 		windowHandle();
 		System.out.println("n스토어 > 장르소설 클릭 확인");
+	}
+	
+	
+	//footer 영역 클릭 
+	public static void footer() throws Exception{
+		
+		driver.findElement(By.xpath(service)).click();
+		Assert.assertEquals("http://www.naver.com/policy/service.html", serviceUrl);
+		System.out.println("이용약관");
+		driver.navigate().back();
+		
+		List<WebElement> footerlinks = driver.findElements(By.xpath("//div[@id='footer']/ul/li"));
+		for(int i=1; i<footerlinks.size(); i++){
+			System.out.print(footerlinks.get(i).getText()+"/ ");
+			footerlinks.get(i).click();
+			windowHandle();
+		}
+
+		driver.findElement(By.xpath(footerNaver)).click();	
+		windowHandle();
+		System.out.println("NAVERcorp");
+		
+		
 	}
 	
 	

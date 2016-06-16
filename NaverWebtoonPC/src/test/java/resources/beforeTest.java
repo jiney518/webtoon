@@ -34,7 +34,7 @@ public class beforeTest extends declaration {
 		}
 
 		driver = new RemoteWebDriver(new URL("http://10.12.45.232:4444/wd/hub"), cap);    	
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 	
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS); 	
 		driver.manage().window().maximize();
     	driver.get(url);
 	}

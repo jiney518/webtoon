@@ -16,6 +16,12 @@ public class declaration {
 	 public static String NAVERurl = "www.naver.com/";
 	 public static String novelUrl = "novel.naver.com/webnovel/weekday.nhn";
 	 public static String myPageUrl = "beta.comic.naver.com/mypage/mypage.nhn";
+	 public static String serviceUrl = "http://www.naver.com/policy/service.html";
+	 public static String privacyUrl = "http://www.naver.com/policy/privacy.html";
+	 public static String disclaimerUrl = "http://www.naver.com/policy/disclaimer.html";
+	 public static String helpUrl = "https://help.naver.com/support/service/main.nhn?serviceNo=799";
+	 public static String businessUrl = "http://comic.naver.com/business/proposalGuide.nhn";
+	 public static String footerNaverUrl = "http://www.navercorp.com/ko/index.nhn";
 	 
 	 public static StringBuffer verificationErrors = new StringBuffer();
 	 
@@ -48,7 +54,10 @@ public class declaration {
 	public static String menu_nstore_book = "//div[@id='menu']/ul/li[7]/a";
 	public static String meun_nstore_novel = "//div[@id='menu']/ul/li[8]/a";
 	
-	
-
+	//footer 
+	public static String service= "//div[@id='footer']/ul/li[1]/a/strong";
+	public static String privacy = "//div[@id='footer']/ul/li[2]/a/strong";
+	public static String disclaimer = "//div[@id='footer']/ul/li[3]/a/strong";
+	public static String footerNaver = "//div[@id='footer']/address/a[1]";
 
 }
