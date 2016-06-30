@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="85.953" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="96.642" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\java\jdk1.8.0_73\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\Administrator\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6295098827122200937.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Administrator\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5928406149364269620.tmp"/>
     <property name="sun.jnu.encoding" value="MS949"/>
     <property name="java.library.path" value="D:\java\jdk1.8.0_73\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_92/bin/server;C:/Program Files/Java/jre1.8.0_92/bin;C:/Program Files/Java/jre1.8.0_92/lib/amd64;C:\ProgramData\Oracle\Java\javapath;D:\java\jdk1.8.0_73\bin;C:\Windows\System32;C:\Program Files (x86)\AMD\ATI.ACE\CoreStatic;D:\jiney\;D:\android\platform-tools;D:\java\apache-maven-3.3.9\bin;C:\Program Files\Bandizip\7z;C:\Users\Administrator\AppData\Roaming\npm;D:\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,45 +60,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="comic_001" classname="main.TC01_공통" time="77.022">
-    <failure message="No window found (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 1.31 seconds&#10;Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;&#10;System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;&#10;Driver info: org.openqa.selenium.ie.InternetExplorerDriver&#10;Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:39706/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]&#10;Session ID: 1be279a5-9e4b-4c5d-8cde-fc01954fc6f1&#10;Command duration or timeout: 1.33 seconds&#10;Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a4f1289f17e8ecd38bc67e137c2a12e34a&apos;, time: &apos;2015-10-07 09:50:14&apos;&#10;System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, webdriver.remote.sessionid=7090ee46-5d16-4887-802b-640744e420cb, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:39706/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]&#10;Session ID: 7090ee46-5d16-4887-802b-640744e420cb" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
-No window found (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.31 seconds
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:39706/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 1be279a5-9e4b-4c5d-8cde-fc01954fc6f1
-Command duration or timeout: 1.33 seconds
-Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
-System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, webdriver.remote.sessionid=7090ee46-5d16-4887-802b-640744e420cb, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:39706/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 7090ee46-5d16-4887-802b-640744e420cb
-	at main.TC01_공통.comic_001(TC01_공통.java:49)
-Caused by: org.openqa.selenium.NoSuchWindowException: 
-No window found (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.31 seconds
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:39706/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 1be279a5-9e4b-4c5d-8cde-fc01954fc6f1
-Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
-System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
-Driver info: driver.version: RemoteWebDriver
-</failure>
-    <system-out><![CDATA[browser check: internet explorer
-****open browser**********
-GNB 클릭: http://www.naver.com/
-GNB 클릭: http://novel.naver.com/webnovel/weekday.nhn
-로그인 정보nv_cjdthsus1235/ nhn123!@#
-만화홈, 웹툰, 베스트도전, 도전만화 메뉴 클릭
-로그인 상태에서 마이페이지 클릭
-n스토어 > 단행본 만화 클릭 확인
-n스토어 > 장르소설 클릭 확인
-이용약관
-개인정보취급방침/ 책임의 한계와 법적고지/ 만화 고객센터/ 웹툰광고?사업문의/ NAVERcorp
-]]></system-out>
-  </testcase>
+  <testcase name="comic_001" classname="main.TC01_공통" time="86.812"/>
 </testsuite>

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -127,11 +128,13 @@ public class Utilities extends declaration{
 		}
 		
 		driver.findElement(By.xpath(menu_nstore_book)).click();
+		Thread.sleep(1000);
 		windowHandle();
 		System.out.println("n스토어 > 단행본 만화 클릭 확인");
 		
-		Thread.sleep(1000);
+	
 		driver.findElement(By.xpath(meun_nstore_novel)).click();
+		Thread.sleep(1000);
 		windowHandle();
 		System.out.println("n스토어 > 장르소설 클릭 확인");
 	}
@@ -142,13 +145,14 @@ public class Utilities extends declaration{
 		
 		driver.findElement(By.xpath(service)).click();
 		Assert.assertEquals("http://www.naver.com/policy/service.html", serviceUrl);
-		System.out.println("이용약관");
+		System.out.print("이용약관/");
 		driver.navigate().back();
 		
 		List<WebElement> footerlinks = driver.findElements(By.xpath("//div[@id='footer']/ul/li"));
 		for(int i=1; i<footerlinks.size(); i++){
 			System.out.print(footerlinks.get(i).getText()+"/ ");
 			footerlinks.get(i).click();
+			Thread.sleep(1000);
 			windowHandle();
 		}
 
@@ -158,7 +162,7 @@ public class Utilities extends declaration{
 		
 		
 	}
-	
+
 	
 	
 }

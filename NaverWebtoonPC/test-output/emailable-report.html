@@ -31,68 +31,91 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">46.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">1.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">main.TC01_공통</td><td><a href="#m1"><b>comic_001</b>  </a></td><td class="numi">1</td><td>1466066923159</td><td class="numi">37651</td></tr>
+<tr><th colspan="4">test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">main.TC01_공통</td><td><a href="#m1"><b>test</b>  </a></td><td class="numi">1</td><td>1467006773877</td><td class="numi">0</td></tr>
+<tr><th colspan="4">test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">main.TC01_공통</td><td><a href="#m2"><b>afterClass</b>  </a></td><td class="numi">1</td><td>1467006775770</td><td class="numi">0</td></tr>
+<tr><th colspan="4">test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">main.TC01_공통</td><td><a href="#m3"><b>comic_001</b>  </a></td><td class="numi">1</td><td>1467006775768</td><td class="numi">1</td></tr>
 </table>
 <h1>test</h1>
-<h2 id="m1">main.TC01_공통:comic_001</h2>
-<div style="padding-left:3em">
-<p>No window found (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.38 seconds
-Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
-System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:30625/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: bb9d314f-249d-42e7-9787-34fbea1d3d63
-Command duration or timeout: 1.39 seconds
-Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a4f1289f17e8ecd38bc67e137c2a12e34a&apos;, time: &apos;2015-10-07 09:50:14&apos;
-System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, webdriver.remote.sessionid=ebf55f48-800b-4d1e-8126-6206c679d9f4, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:30625/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: ebf55f48-800b-4d1e-8126-6206c679d9f4</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:973)
-<br/>at resources.Utilities.windowHandle(Utilities.java:41)
-<br/>at resources.Utilities.menu(Utilities.java:130)
-<br/>at main.TC01_공통.comic_001(TC01_공통.java:47)
-<br/>21 lines not shown
-<p>Caused by No window found (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.38 seconds
-Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
-System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:30625/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: bb9d314f-249d-42e7-9787-34fbea1d3d63
+<h2 id="m1">main.TC01_공통:test</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>internet explorer</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a4f1289f17e8ecd38bc67e137c2a12e34a&apos;, time: &apos;2015-10-07 09:50:14&apos;
 System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: driver.version: RemoteWebDriver</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:973)
-<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.window(EventFiringWebDriver.java:596)
-<br/>at org.openqa.selenium.remote.server.handler.SwitchToWindow.call(SwitchToWindow.java:43)
-<br/>at org.openqa.selenium.remote.server.handler.SwitchToWindow.call(SwitchToWindow.java:1)
-<br/>at java.util.concurrent.FutureTask.run(Unknown Source)
-<br/>at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
-<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-<br/>at java.lang.Thread.run(Unknown Source)
-<br/>1 lines not shown
-</div>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:247)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:129)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+<br/>at resources.beforeTest.setUp(beforeTest.java:36)
+<br/>at main.TC01_공통.test(TC01_공통.java:20)
+<br/>19 lines not shown
+<p>Caused by Connect to 10.12.45.232:4444 [/10.12.45.232] failed: Connection refused: connect</p>
+org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:247)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:129)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+<br/>at resources.beforeTest.setUp(beforeTest.java:36)
+<br/>at main.TC01_공통.test(TC01_공통.java:20)
+<br/>19 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br/>at java.net.Socket.connect(Socket.java:589)
+<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+<br/>at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:247)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:129)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+<br/>at resources.beforeTest.setUp(beforeTest.java:36)
+<br/>at main.TC01_공통.test(TC01_공통.java:20)
+<br/>19 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">main.TC01_공통:afterClass</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">main.TC01_공통:comic_001</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
