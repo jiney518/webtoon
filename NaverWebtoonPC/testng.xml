@@ -5,7 +5,8 @@
      
     <parameter name="browser" value="internet explorer"/>
     <classes>         
-      <class name="main.TC01_공통"/>
+       <class name="main.TC01_공통"/> 
+       <class name="main.TC02_만화홈"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

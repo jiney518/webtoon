@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Parallel Tests" duration-ms="96272" started-at="2016-06-30T01:16:27Z" finished-at="2016-06-30T01:18:03Z">
+  <suite name="Parallel Tests" duration-ms="84076" started-at="2016-07-11T09:45:41Z" finished-at="2016-07-11T09:47:05Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="96272" started-at="2016-06-30T01:16:27Z" finished-at="2016-06-30T01:18:03Z">
+    <test name="test" duration-ms="84076" started-at="2016-07-11T09:45:41Z" finished-at="2016-07-11T09:47:05Z">
       <class name="main.TC01_공통">
-        <test-method status="PASS" signature="test(java.lang.String)[pri:0, instance:main.TC01_공통@1554909b]" name="test" is-config="true" duration-ms="4727" started-at="2016-06-30T10:16:27Z" finished-at="2016-06-30T10:16:32Z">
+        <test-method status="PASS" signature="test(java.lang.String)[pri:0, instance:main.TC01_공통@6aaa5eb0]" name="test" is-config="true" duration-ms="4939" started-at="2016-07-11T18:45:41Z" finished-at="2016-07-11T18:45:46Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,126 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="comic_001()[pri:0, instance:main.TC01_공통@1554909b]" name="comic_001" duration-ms="86811" started-at="2016-06-30T10:16:32Z" finished-at="2016-06-30T10:17:59Z">
+        <test-method status="FAIL" signature="comic_001()[pri:0, instance:main.TC01_공통@6aaa5eb0]" name="comic_001" duration-ms="65943" started-at="2016-07-11T18:45:46Z" finished-at="2016-07-11T18:46:52Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[No window found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.41 seconds
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_92'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:11304/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 84d19888-7622-44b2-affa-01d1e0cae919
+Command duration or timeout: 1.42 seconds
+Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
+System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, webdriver.remote.sessionid=4cd6aa20-c5e2-41c6-8156-e4111c5efd06, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:11304/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 4cd6aa20-c5e2-41c6-8156-e4111c5efd06]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: No window found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.41 seconds
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_92'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:11304/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 84d19888-7622-44b2-affa-01d1e0cae919
+Command duration or timeout: 1.42 seconds
+Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
+System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, webdriver.remote.sessionid=4cd6aa20-c5e2-41c6-8156-e4111c5efd06, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:11304/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 4cd6aa20-c5e2-41c6-8156-e4111c5efd06
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:973)
+	at resources.Utilities.windowHandle(Utilities.java:43)
+	at resources.Utilities.footer(Utilities.java:157)
+	at main.TC01_공통.comic_001(TC01_공통.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchWindowException: No window found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.41 seconds
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_92'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:11304/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 84d19888-7622-44b2-affa-01d1e0cae919
+Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
+System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:973)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.window(EventFiringWebDriver.java:596)
+	at org.openqa.selenium.remote.server.handler.SwitchToWindow.call(SwitchToWindow.java:43)
+	at org.openqa.selenium.remote.server.handler.SwitchToWindow.call(SwitchToWindow.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- comic_001 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:main.TC01_공통@1554909b]" name="afterClass" is-config="true" duration-ms="4727" started-at="2016-06-30T10:17:59Z" finished-at="2016-06-30T10:18:03Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:main.TC01_공통@6aaa5eb0]" name="afterClass" is-config="true" duration-ms="4227" started-at="2016-07-11T18:46:52Z" finished-at="2016-07-11T18:46:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- main.TC01_공통 -->
+      <class name="main.TC02_만화홈">
+        <test-method status="PASS" signature="test(java.lang.String)[pri:0, instance:main.TC02_만화홈@dfd3711]" name="test" is-config="true" duration-ms="4366" started-at="2016-07-11T18:46:56Z" finished-at="2016-07-11T18:47:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[internet explorer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="comic_002()[pri:0, instance:main.TC02_만화홈@dfd3711]" name="comic_002" duration-ms="352" started-at="2016-07-11T18:47:00Z" finished-at="2016-07-11T18:47:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comic_002 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:main.TC02_만화홈@dfd3711]" name="afterClass" is-config="true" duration-ms="4222" started-at="2016-07-11T18:47:01Z" finished-at="2016-07-11T18:47:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- main.TC02_만화홈 -->
     </test> <!-- test -->
   </suite> <!-- Parallel Tests -->
 </testng-results>

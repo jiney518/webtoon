@@ -3,6 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+      <class name="main.TC02_만화홈">
+        <methods>
+          <include name="comic_002"/>
+        </methods>
+      </class> <!-- main.TC02_만화홈 -->
       <class name="main.TC01_공통">
         <methods>
           <include name="comic_001"/>

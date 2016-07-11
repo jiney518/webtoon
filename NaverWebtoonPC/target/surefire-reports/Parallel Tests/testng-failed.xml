@@ -12,6 +12,12 @@
           <include name="comic_001"/>
         </methods>
       </class> <!-- main.TC01_공통 -->
+      <class name="main.TC02_만화홈">
+        <methods>
+          <include name="afterClass"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- main.TC02_만화홈 -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Parallel Tests] -->

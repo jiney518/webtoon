@@ -54,6 +54,9 @@ public class declaration {
 	public static String menu_nstore_book = "//div[@id='menu']/ul/li[7]/a";
 	public static String meun_nstore_novel = "//div[@id='menu']/ul/li[8]/a";
 	
+	//홈 > 상단 플래쉬
+	public static String flash_date = "//*[@id='curDate']";
+	
 	//footer 
 	public static String service= "//div[@id='footer']/ul/li[1]/a/strong";
 	public static String privacy = "//div[@id='footer']/ul/li[2]/a/strong";

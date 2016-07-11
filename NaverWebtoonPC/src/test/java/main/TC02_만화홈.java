@@ -1,6 +1,5 @@
 package main;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -10,9 +9,9 @@ import resources.Utilities;
 import resources.beforeTest;
 import resources.declaration;
 
-
-public class TC01_공통 extends declaration{
-		
+public class TC02_만화홈 extends declaration{
+	
+	
 	@Parameters("browser")		
 	@BeforeClass
 	public void test(String browser) throws Exception{
@@ -27,29 +26,16 @@ public class TC01_공통 extends declaration{
 		beforeTest.tearDown();
 	}
 	
+
 	
-	//COMIC_001~COMIC_008
-	@Test
-	public void comic_001() throws Exception{
-
-		//WebElement comicBtn = driver.findElement(By.xpath(comic));
-		
-		Utilities.checkCurrentUrl(naverBI);			
-		Utilities.checkCurrentUrl(novel);
+		//COMIC_009~COMIC_033
+		//상단 플래쉬
+		@Test
+		public void comic_002() throws Exception{
 			
-		Utilities.gnbSearch();			
-		//Utilities.choiceSearch();
+			Utilities.date();
 			
-		Thread.sleep(2000);
-		driver.findElement(By.xpath(comic)).click();					
-		Utilities.login("nv_cjdthsus1235", "nhn123!@#");
-		Utilities.menu();
-			
-		Utilities.footer();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath(comic)).click();
-	}
-
-
+		}
+	
 
 }

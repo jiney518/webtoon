@@ -1,10 +1,11 @@
 package resources;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -127,14 +128,16 @@ public class Utilities extends declaration{
 			System.out.println("로그인 상태에서 마이페이지 클릭");
 		}
 		
+		Thread.sleep(2000);
+		
 		driver.findElement(By.xpath(menu_nstore_book)).click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		windowHandle();
 		System.out.println("n스토어 > 단행본 만화 클릭 확인");
 		
 	
 		driver.findElement(By.xpath(meun_nstore_novel)).click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		windowHandle();
 		System.out.println("n스토어 > 장르소설 클릭 확인");
 	}
@@ -152,17 +155,24 @@ public class Utilities extends declaration{
 		for(int i=1; i<footerlinks.size(); i++){
 			System.out.print(footerlinks.get(i).getText()+"/ ");
 			footerlinks.get(i).click();
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			windowHandle();
 		}
 
 		driver.findElement(By.xpath(footerNaver)).click();	
 		windowHandle();
-		System.out.println("NAVERcorp");
+		System.out.println("NAVERcorp");		
+	}
+	
+	
+	//get current date
+	public static void date() throws Exception{
 		
+		SimpleDateFormat DtFormat = new SimpleDateFormat("yyyy. M. d (E)");
+		Date date = new Date();
+		System.out.println("오늘의 웹툰: " + driver.findElement(By.xpath(flash_date)).getText());
+		Assert.assertEquals(DtFormat.format(date).toString(), driver.findElement(By.xpath(flash_date)).getText());
 		
 	}
-
-	
 	
 }

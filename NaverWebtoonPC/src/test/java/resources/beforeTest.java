@@ -8,6 +8,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -18,7 +19,7 @@ import org.testng.annotations.Parameters;
 
 public class beforeTest extends declaration {
 	
-	@BeforeTest
+	@BeforeClass
 	@Parameters("browser")
 	public static void setUp( String browser) throws Exception{
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -39,7 +40,7 @@ public class beforeTest extends declaration {
     	driver.get(url);
 	}
 	
-
+	@AfterClass
 	public static void tearDown() throws Exception {
 	        //Close the browser
 			Thread.sleep(3000);
